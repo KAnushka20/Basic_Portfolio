@@ -1,0 +1,174 @@
+/* src/components/Contact/Contact.css */
+.contact-section {
+  padding: 80px 20px;
+  background-color: rgb(247, 229, 248);
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.contact-intro-text {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #666;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form {
+  background-color: rgb(255, 254, 254);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: rgb(240, 234, 234);
+  margin-bottom: 40px;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  box-shadow: #555;
+}
+
+.form-label {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(160, 159, 159);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #555;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  resize: vertical;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); /* Primary color with transparency */
+}
+
+.submit-button {
+  background-color: rgb(158, 218, 243);
+  color: rgb(40, 40, 40);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.social-links-contact {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icon-contact {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon-contact:hover {
+  color: #2980b9;
+  transform: translateY(-5px);
+}
+
+/* Responsive adjustments for Contact (heading/container handled by index.css) */
+
+/* Add additional styles below this line if needed */
+/* ========== MEDIA QUERIES ========== */
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 1200px) {
+  .contact-section {
+    padding: 60px 15px;
+  }
+  .contact-intro-text {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .contact-form {
+    padding: 30px;
+    max-width: 90%;
+  }
+  .submit-button {
+    padding: 12px 25px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-section {
+    padding: 50px 10px;
+  }
+  .contact-intro-text {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  .contact-form {
+    padding: 25px;
+    max-width: 95%;
+  }
+  .form-label,
+  .submit-button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 40px 5px;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .contact-intro-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  .contact-form {
+    padding: 20px;
+    max-width: 100%;
+  }
+  .form-label {
+    font-size: 0.9rem;
+  }
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  .social-links-contact {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+  .contact-section {
+    padding: 15px 1px;
+  }
+}

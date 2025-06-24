@@ -1,0 +1,95 @@
+/* Skills.css */
+.skills-section {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #f1f1f1;
+  overflow-x: hidden; /* Light background for visibility */
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; /* Center text for headings */
+}
+
+.section-heading {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns by default */
+  gap: 20px; /* Space between skill cards */
+}
+
+.skill-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.skill-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.skill-icon {
+  font-size: 2.5rem; /* Icon size */
+  color: #61dafb; /* Icon color */
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.skill-name {
+  font-size: 1.25rem; /* Skill name size */
+  color: #555; /* Text color */
+}
+
+/* Media Queries */
+/* Skills.css */
+
+/* Ensure no horizontal overflow */
+/* Skills.css */
+
+/* Base styles for the skills section */
+.skills-section {
+  width: 100%; /* Ensure full width */
+  padding: 0 15px; /* Add padding to prevent cutting */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+  }
+}
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* Single column */
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+
+  .skill-card {
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin: 5px 0; /* Add margin for spacing */
+  }
+
+  .skill-icon {
+    font-size: 1.5rem; /* Adjust icon size */
+  }
+
+  .skill-name {
+    font-size: 0.9rem; /* Adjust skill name size */
+  }
+}

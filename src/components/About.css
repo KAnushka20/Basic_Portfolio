@@ -1,0 +1,99 @@
+/* About.css */
+.about-section {
+  width: 100%;
+  max-width: 100vw;
+  min-width: 0;
+  min-height: 100vh;
+  padding: 60px 20px;
+  background-color: #f6eaf3; /* Light background for visibility */
+  display: flex; /* Use Flexbox for layout */
+  justify-content: center; /* Center content */
+  flex-wrap: wrap;
+}
+
+.section-container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 39.84px;
+  color: #333;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.section-subheading {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #666;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  margin-top: 1px;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  background-color: #ffffff;
+  padding: 40px 20px; /* Adjusted padding for better responsiveness */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #555;
+  animation: floatImage 2.5s ease-in-out infinite alternate;
+}
+
+.about-paragraph {
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .about-section {
+    padding: 60px 5%; /* Use percentage for better responsiveness */
+  }
+
+  .about-content {
+    max-width: 100%; /* Allow full width */
+    padding: 30px 5%; /* Adjust padding */
+  }
+}
+
+@media (max-width: 900px) {
+  .about-section {
+    padding: 50px 5%; /* Use percentage for better responsiveness */
+  }
+
+  .about-content {
+    max-width: 100%; /* Allow full width */
+    padding: 25px 5%; /* Adjust padding */
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 40px 5%; /* Use percentage for better responsiveness */
+  }
+
+  .about-content {
+    max-width: 100%; /* Allow full width */
+    padding: 20px 5%; /* Adjust padding */
+    font-size: 1rem; /* Maintain font size */
+  }
+}
